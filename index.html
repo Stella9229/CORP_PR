@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title>MLB FALL STYLE with KARINA &amp; RESCENE — MLB 26FW FALL</title>
+<link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  /* ── 대시보드 키컬러 ── */
+  --main:#5F4A45;          /* MAIN 1 · 딥브라운 */
+  --pink:#EDC3C3;          /* MAIN 2 · 페일핑크 */
+  --pink-deep:#C98E90;     /* 핑크 계열 텍스트용 */
+  --sub-k:#A19172;         /* SUB · 카키베이지 (필요 시) */
+
+  --paper:#FCFAF8; --ink:#241D1B; --body:#575049; --sub:#9A8F89; --faint:#C9C0BA;
+  --line:#EDE7E2; --line2:#DED4CE; --band:#F5F0EB;
+  --ff:'SUIT Variable','SUIT','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --ff-ko:'Pretendard Variable','Pretendard','Apple SD Gothic Neo',-apple-system,system-ui,sans-serif;
+}
+html,body{overflow-x:hidden;max-width:100%}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff);background:var(--paper);color:var(--ink);
+  -webkit-font-smoothing:antialiased;line-height:1.72;letter-spacing:-.022em;
+  word-break:keep-all;overflow-wrap:break-word}
+.ko{font-family:var(--ff-ko)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 30px}
+
+/* ── 상단바 ── */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:30;background:rgba(252,250,248,.92);
+  backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line)}
+.topbar .in{max-width:1080px;margin:0 auto;padding:11px 30px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.topbar b{font-size:10.5px;font-weight:800;letter-spacing:.2em;color:var(--ink)}
+.topbar span{font-size:10px;letter-spacing:.14em;color:var(--sub);font-weight:600}
+.prog{position:fixed;top:0;left:0;height:2px;background:var(--main);z-index:31;width:0}
+
+/* ── 초안 표시 (body 의 draft 클래스를 지우면 전부 사라진다) ── */
+.draftnote{display:none}
+body.draft .draftnote{display:block;margin:0 auto;max-width:1080px;padding:58px 30px 0}
+body.draft #hero{padding-top:26px}
+body.draft .draftnote i{display:block;padding:11px 15px;background:var(--ink);color:#E8E2DE;
+  font-style:normal;font-size:12.4px;line-height:1.6;letter-spacing:-.015em}
+body.draft .draftnote b{color:var(--pink);font-weight:700}
+
+/* ── 대문 ── */
+#hero{padding:92px 30px 0;max-width:1080px;margin:0 auto}
+#hero .kick{font-size:10.5px;font-weight:800;letter-spacing:.3em;color:var(--main)}
+#hero h1{margin-top:20px;font-size:clamp(34px,6.2vw,70px);font-weight:300;letter-spacing:-.055em;line-height:1.06}
+#hero h1 em{font-style:normal;font-weight:700}
+#hero h1 .amp{color:var(--pink-deep);font-weight:300}
+#hero .sub{margin-top:20px;font-size:clamp(15.5px,2vw,19px);font-weight:600;color:var(--ink);letter-spacing:-.032em}
+#hero .meta{margin-top:24px;padding-top:13px;border-top:1px solid var(--line2);display:flex;flex-wrap:wrap;gap:6px 24px;
+  font-size:11.5px;color:var(--sub);letter-spacing:.02em;font-weight:500}
+#hero .meta b{color:var(--body);font-weight:700}
+.herotop{margin-top:clamp(30px,4vw,52px)}
+.herotop img{width:100%;display:block}
+.herotop img,.herotop .slot{width:100%;box-shadow:0 18px 38px -20px rgba(36,29,27,.26)}
+
+/* ── 섹션 공통 ── */
+section{padding:clamp(54px,6vw,84px) 0 0}
+.lb{font-size:10px;font-weight:800;letter-spacing:.32em;color:var(--main);text-transform:uppercase}
+h2{margin-top:13px;font-size:clamp(24px,3.6vw,36px);font-weight:300;letter-spacing:-.05em;line-height:1.24}
+h2 b{font-weight:700}
+p.t{margin-top:15px;font-size:15.4px;font-weight:400;color:var(--body);line-height:1.8;text-wrap:pretty;max-width:900px}
+p.t+p.t{margin-top:10px}
+p.t b{font-weight:700;color:var(--ink)}
+figure{margin:0}
+figcaption{margin-top:9px;font-size:11.5px;color:var(--sub);line-height:1.5;font-weight:500}
+
+/* ── 이미지/영상 대기 슬롯 ── */
+.slot{background:var(--band);border:1px dashed var(--line2);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+  text-align:center;padding:18px 14px;color:var(--faint);line-height:1.6}
+.slot>i{display:block;font-style:normal;font-size:9.6px;font-weight:800;letter-spacing:.2em;color:var(--sub-k)}
+.slot>b{display:block;margin-top:6px;font-size:12px;font-weight:700;color:var(--sub);letter-spacing:-.015em;max-width:90%}
+.slot>em{display:block;margin-top:6px;font-style:normal;font-size:10.4px;font-weight:500;color:var(--faint);letter-spacing:.02em}
+.r23{aspect-ratio:2/3}.r11{aspect-ratio:1/1}.r169{aspect-ratio:16/9}.r45{aspect-ratio:4/5}.r32{aspect-ratio:3/2}
+
+/* ── 앰버서더 스테이트먼트 ── */
+.stmt{margin-top:clamp(14px,1.6vw,20px);padding:clamp(22px,2.6vw,32px) 0 clamp(12px,1.4vw,17px);border-top:1px solid var(--ink)}
+.stkick{font-size:10px;font-weight:800;letter-spacing:.3em;color:var(--main)}
+.stbig{margin-top:14px;font-size:clamp(25px,3.7vw,38px);font-weight:300;letter-spacing:-.05em;line-height:1.3;color:var(--ink)}
+.stbig b{font-weight:700}
+.stbig .pk{color:var(--pink-deep);font-weight:700}
+.stsub{margin-top:13px;font-size:14.8px;color:var(--body);line-height:1.74;max-width:840px}
+.stsub b{font-weight:700;color:var(--ink)}
+
+/* 영상 */
+.filmbox{margin-top:clamp(22px,2.6vw,32px)}
+.filmbox video{display:block;width:100%;background:var(--band);border:1px solid var(--line2)}
+.filmcopy{margin-top:clamp(20px,2.4vw,28px);padding:clamp(20px,2.4vw,28px);background:var(--band);border-left:3px solid var(--main)}
+.filmcopy .fh{font-size:clamp(17px,2.2vw,21px);font-weight:700;letter-spacing:-.042em;line-height:1.4;color:var(--ink)}
+.filmcopy .fh em{font-style:normal;color:var(--main)}
+.filmcopy p{margin-top:11px;font-size:14.6px;color:var(--body);line-height:1.78;max-width:860px}
+.filmcopy p b{color:var(--ink);font-weight:700}
+
+/* 화보 마퀴 */
+.marquee{margin-top:clamp(30px,3.6vw,46px);overflow:hidden;position:relative;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.mtrack{display:flex;gap:14px;width:max-content;animation:mscroll 90s linear infinite}
+.marquee:hover .mtrack{animation-play-state:paused}
+.mtrack img{display:block}
+.mtrack img,.mtrack .slot{height:clamp(420px,48vw,660px);width:auto;aspect-ratio:2/3;background:var(--band);flex:0 0 auto}
+@keyframes mscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.mtrack{animation:none}.marquee{overflow-x:auto}}
+.mqnote{margin-top:10px;font-size:11.4px;color:var(--sub);letter-spacing:-.01em}
+
+/* ── KEY ITEM 그룹 ── */
+.grp{margin-top:clamp(40px,4.6vw,60px);padding-top:clamp(22px,2.6vw,30px);border-top:1px solid var(--line2)}
+.grp .gno{font-size:10px;font-weight:800;letter-spacing:.2em;color:var(--main)}
+.grp .gt{margin-top:9px;font-size:clamp(20px,2.6vw,26px);font-weight:700;letter-spacing:-.045em;line-height:1.26}
+.grp .gd{margin-top:11px;font-size:14.6px;color:var(--body);letter-spacing:-.025em;line-height:1.68;max-width:880px}
+.hlcopy{margin-top:clamp(18px,2.1vw,24px);padding:14px 18px;background:var(--pink);
+  font-size:clamp(15px,1.9vw,17.6px);font-weight:700;letter-spacing:-.038em;line-height:1.5;color:#3A2B28}
+.itemrow{margin-top:clamp(22px,2.6vw,30px);display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:clamp(14px,2vw,22px);align-items:start}
+.itemrow img{width:100%;display:block;background:var(--band)}
+.usp{border-top:1px solid var(--main)}
+.usp .un{padding-top:12px;font-size:9.6px;font-weight:800;letter-spacing:.22em;color:var(--main)}
+.usp ul{margin-top:11px;list-style:none}
+.usp li{position:relative;padding:9px 0 9px 22px;border-bottom:1px solid var(--line);
+  font-size:13.6px;font-weight:600;letter-spacing:-.03em;line-height:1.5;color:var(--ink)}
+.usp li:before{content:'';position:absolute;left:3px;top:16px;width:7px;height:7px;border-radius:50%;background:var(--pink)}
+.usp li:last-child{border-bottom:0}
+
+/* ── 제품 상세 ── */
+.p3lead{margin-top:clamp(34px,4vw,52px);padding-top:clamp(20px,2.4vw,26px);border-top:1px solid var(--line2);text-align:center}
+.p3lead .pl1{font-size:clamp(16px,2.1vw,19.4px);font-weight:700;letter-spacing:-.04em;line-height:1.5;color:var(--ink)}
+.p3lead .pl2{margin:11px auto 0;max-width:660px;font-size:14.2px;color:var(--body);line-height:1.7}
+.p3{margin-top:clamp(22px,2.6vw,30px);display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.4vw,30px)}
+.p3>div{text-align:center}
+.p3 .pi{background:#EFEBE7;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.p3 .pi img{width:100%;height:100%;object-fit:contain;display:block}
+.p3 .pi .slot{width:100%;height:100%;border:0;background:transparent}
+.p3 .pn{margin-top:11px;font-size:9.4px;font-weight:800;letter-spacing:.2em;color:var(--faint)}
+.p3 h4{margin-top:6px;font-size:14.4px;font-weight:700;letter-spacing:-.04em;line-height:1.34;color:var(--ink)}
+.p3 .pk{margin-top:8px;font-size:11.6px;color:var(--sub);line-height:1.55;letter-spacing:-.02em}
+.p3 .pr{margin-top:10px;padding-top:9px;border-top:1px solid var(--line);
+  font-size:12.2px;line-height:1.5;color:var(--main);font-weight:700;letter-spacing:-.025em}
+
+/* ── 라이프스타일 ── */
+.g4big{margin-top:clamp(24px,2.8vw,34px);display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(9px,1.2vw,14px);align-items:start}
+.g4big img{display:block;object-fit:cover;object-position:50% 35%}
+.g4big img,.g4big .slot{width:100%;aspect-ratio:4/5;box-shadow:0 14px 30px -18px rgba(36,29,27,.24)}
+
+/* ── 클로징 ── */
+#closing{margin-top:clamp(56px,6.4vw,88px);background:linear-gradient(135deg,#231A18 0%, #2E211E 55%, #382825 100%);color:#fff;padding:clamp(52px,6vw,82px) 30px;overflow:hidden}
+#closing .in{max-width:1080px;margin:0 auto;display:block}
+#closing .copy{max-width:900px}
+#closing h2{margin-top:18px;color:#fff;font-weight:700;font-size:clamp(29px,4.6vw,56px);letter-spacing:-.055em;line-height:1.12}
+#closing h2 .hl{display:inline-block;font-style:normal;font-weight:800;color:var(--pink)}
+#closing h2 .muted{display:inline-block;font-weight:300;color:#F6F1EE}
+#closing .subcap{margin-top:18px;font-size:13px;line-height:1.7;color:#D7CCC6;max-width:760px;letter-spacing:-.01em}
+#closing .sig{grid-column:1/-1;margin-top:30px;padding-top:15px;border-top:1px solid rgba(255,255,255,.14);font-size:10.5px;letter-spacing:.18em;color:#9E918B;font-weight:600}
+footer{padding:24px 0 52px;font-size:11.6px;color:var(--sub);line-height:1.7}
+footer b{color:var(--body);font-weight:600}
+
+/* ── 등장 애니메이션 ── */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .8s cubic-bezier(.22,.61,.36,1),transform .8s cubic-bezier(.22,.61,.36,1)}
+.rv.on{opacity:1;transform:none}
+
+@media (max-width:880px){
+  .itemrow{grid-template-columns:1fr 1fr}
+  .usp{grid-column:1/-1;margin-top:6px}
+  .g4big{grid-template-columns:1fr 1fr}
+  .p3{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .wrap{padding:0 18px;max-width:100%}
+  .topbar .in{padding:9px 18px}
+  .topbar b{font-size:9.5px;letter-spacing:.14em}
+  .topbar span{font-size:9px}
+  body.draft .draftnote{padding:50px 18px 0}
+  #hero{padding:72px 18px 0}
+  body.draft #hero{padding-top:22px}
+  #hero h1{font-size:clamp(28px,9vw,40px);letter-spacing:-.045em}
+  #hero .sub{font-size:15px}
+  section{padding:44px 0 0}
+  h2{font-size:clamp(21px,6.4vw,27px)}
+  .stbig{font-size:21px}
+  .itemrow{grid-template-columns:1fr;gap:12px}
+  .p3{grid-template-columns:1fr;gap:24px}
+  .p3 .pi{width:74%;margin:0 auto}
+  .g4big{grid-template-columns:1fr 1fr;gap:8px}
+  .mtrack{gap:8px}
+  .mtrack img,.mtrack .slot{height:300px}
+  .filmcopy{padding:16px}
+  #closing{padding:42px 18px}
+  #closing h2{font-size:clamp(28px,9vw,38px)}
+}
+@media print{
+  .topbar,.prog,.draftnote{display:none}
+  .rv{opacity:1;transform:none}
+  body{background:#fff}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .grp,.p3>div,.filmcopy{break-inside:avoid}
+}
+
+/* ── 최종 에셋 최적화 ── */
+.filmbox video{aspect-ratio:16/9;object-fit:cover}
+img{max-width:100%;height:auto}
+</style>
+</head>
+<body class="">
+<div class="prog" id="prog"></div>
+<div class="topbar"><div class="in">
+<b>MLB</b>
+<span>26 F/W FALL COMMUNICATION</span>
+</div></div>
+
+<!-- ══════ 대문 ══════ -->
+<header id="hero">
+<div class="kick">MLB 26FW FALL KEY CAMPAIGN</div>
+<h1>MLB <em>FALL STYLE</em><br/>with KARINA <span class="amp">&amp;</span> RESCENE</h1>
+<p class="sub">카리나와 리센느가 제안하는 MLB FALL STYLE</p>
+<div class="meta">
+<span><b>CAMPAIGN</b> THE NEW CURVE · THE NEW SLEEK</span>
+<span><b>AMBASSADOR</b> KARINA · RESCENE</span>
+<span><b>KEY ITEM</b> 경량패딩 · 슬릭</span>
+</div>
+<figure class="herotop">
+<img alt="명동PSD T18_하단" decoding="async" fetchpriority="high" loading="eager" src="assets/hero-main.jpg"/>
+</figure>
+</header>
+<div class="wrap">
+<!-- ══════ 01 · KARINA ══════ -->
+<section class="rv">
+<div class="stmt">
+<div class="stkick">AMBASSADOR 01 · KARINA</div>
+<p class="stbig">KARINA, <b>THE NEW <span class="pk">CURVE</span></b></p>
+<p class="stsub">26FW, 야구공이 그려내는 곡선을 현대적인 실루엣으로 재해석한 <b>MLB NEW 커브패딩</b>을 선보입니다.</p>
+</div>
+<div class="filmbox">
+<video aria-label="카리나_FALL_영상_최종_가로" autoplay="" controls="" loop="" muted="" playsinline="" poster="assets/karina-film-poster.webp" preload="metadata" src="assets/karina-fall-film.mp4"></video>
+</div>
+<div class="filmcopy">
+<p class="fh">헤리티지와 트렌디한 실루엣이 만난 <em>THE NEW CURVE</em></p>
+<p>26FW 카리나 FALL 캠페인은 트렌디한 시장 니즈에 헤리티지를 더해 새롭게 태어난 커브 패딩을 담아냈습니다.
+    야구공이 그려내는 곡선을 카리나만의 매력적인 실루엣으로 구현했으며, 경쾌하고 힙한 카리나의 무브먼트로
+    <b>가벼운 경량감</b>을 보여줍니다. 헤리티지와 현대적인 실루엣으로 더욱 새로워진 MLB NEW 커브패딩을 만나보세요.</p>
+</div>
+<div class="marquee">
+<div class="mtrack" id="mq-karina">
+<img alt="카리나 화보 (4)" decoding="async" loading="lazy" src="assets/karina-01.webp"/>
+<img alt="카리나 화보 (5)" decoding="async" loading="lazy" src="assets/karina-02.webp"/>
+<img alt="카리나 화보 (3)" decoding="async" loading="lazy" src="assets/karina-03.webp"/>
+<img alt="카리나 화보 (2)" decoding="async" loading="lazy" src="assets/karina-04.webp"/>
+</div>
+</div>
+</section>
+<!-- ══════ 02 · RESCENE ══════ -->
+<section class="rv">
+<div class="stmt">
+<div class="stkick">AMBASSADOR 02 · RESCENE</div>
+<p class="stbig">SLEEK, <b>THE <span class="pk">RESCENE</span> WAY</b></p>
+<p class="stsub">리센느만의 매력으로 선보이는 <b>MLB 슬릭</b> 가을 스타일링</p>
+</div>
+<div class="filmbox">
+<video aria-label="RESCENE MAIN FILM (가로)" autoplay="" controls="" loop="" muted="" playsinline="" poster="assets/rescene-film-poster.webp" preload="metadata" src="assets/rescene-main-film.mp4"></video>
+</div>
+<div class="filmcopy">
+<p class="fh">리센느가 제안하는 <em>슬릭 × 힙스포티브</em> 무드</p>
+<p>리센느 FALL 캠페인은 야구화에서 영감을 받아 MLB만의 헤리티지와 스타일로 힙하게 재해석된 스포티브 스니커즈,
+    슬릭을 담았습니다. <b>베이스볼 스티치 디테일</b>과 슬림한 로우 프로파일 쉐입, 가벼운 중량과 유연한 아웃솔이
+    선사하는 편안한 착화감까지. 리센느가 제안하는 가을 슬릭 스타일링을 지금 바로 만나보세요.</p>
+</div>
+<div class="marquee">
+<div class="mtrack" id="mq-rescene">
+<img alt="리센느 화보_단체 (1)" decoding="async" loading="lazy" src="assets/rescene-01.webp"/>
+<img alt="리센느 화보_리브,미나미" decoding="async" loading="lazy" src="assets/rescene-02.webp"/>
+<img alt="리센느 화보_제나,메이" decoding="async" loading="lazy" src="assets/rescene-03.webp"/>
+<img alt="리센느 화보_미나미" decoding="async" loading="lazy" src="assets/rescene-04.webp"/>
+<img alt="리센느 화보_제나" decoding="async" loading="lazy" src="assets/rescene-05.webp"/>
+</div>
+</div>
+</section>
+<!-- ══════ 03 · KEY ITEM ══════ -->
+<section class="rv">
+<div class="lb">Key item</div>
+<h2>헤리티지와 트렌드로 완성된<br/><b>MLB 26FW</b></h2>
+<p class="t">26FW FALL의 핵심 아이템은 <b>경량패딩</b>과 <b>슬릭</b>입니다. MLB의 헤리티지, 야구에서 영감을 받은 두 아이템은
+  현대적인 디자인과 트렌드를 좇아 고객이 사고 싶은 아이템으로 탄생했습니다. 새로워진 MLB의 가을 시즌 아이템을 제안합니다.</p>
+<!-- CURVE PADDING -->
+<div class="grp">
+<div class="gno">ITEM 01 · CURVE PADDING</div>
+<p class="gt">야구공의 곡선을 입은 경량패딩</p>
+<p class="hlcopy">가볍지만 실루엣은 새롭게, THE NEW CURVE 경량패딩</p>
+<div class="itemrow">
+<img alt="카리나 화보 (7)" decoding="async" loading="lazy" src="assets/curve-look.webp"/>
+<img alt="★카리나_3FPDB0166-07CRP_01_MS" decoding="async" loading="lazy" src="assets/curve-product.webp"/>
+<div class="usp">
+<div class="un">STRENGTH</div>
+<ul>
+<li>입체적인 패턴으로 매력적인 실루엣</li>
+<li>10D 초경량 원단 소재로 가벼운 착용감</li>
+<li>뛰어난 보온성과 활동성</li>
+<li>다양한 컬러웨이로 시즌 포인트 아우터 활용</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- SLEEK -->
+<div class="grp">
+<div class="gno">ITEM 02 · SLEEK</div>
+<p class="gt">야구화에서 온 로우 프로파일 스니커즈</p>
+<p class="hlcopy">야구 헤리티지를 담은 슬림, 트렌디한 로우 프로파일 슈즈, THE NEW SLEEK</p>
+<div class="itemrow">
+<img alt="리센느 화보_리브" decoding="async" loading="lazy" src="assets/sleek-look.webp"/>
+<img alt="3ACVS026N-13PKL_08_MS" decoding="async" loading="lazy" src="assets/sleek-product.webp"/>
+<div class="usp">
+<div class="un">RESULT</div>
+<ul>
+<li>슬림한 로우 프로파일 쉐입의 트렌디한 디자인</li>
+<li>야구화에서 영감을 받은 베이스볼 스티치 디테일</li>
+<li>가벼운 중량감이 선사하는 활동성</li>
+<li>유연한 아웃솔 구조의 편안한 착화감</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 제품 상세 -->
+<div class="p3lead">
+<p class="pl1">MLB의 26FW ITEM</p>
+<p class="pl2">MLB의 헤리티지와 힙한 트렌드가 만나 더욱 새로워진 MLB 26FW ITEM</p>
+</div>
+<div class="p3 rv">
+<div>
+<div class="pi"><img alt="3ADJBD466-07GRP_01_MS" decoding="async" loading="lazy" src="assets/item-padding.webp"/></div>
+<div class="pn">01</div>
+<h4>고프코어 스텐넥 패커블 경량 커브패딩</h4>
+<p class="pk">저데니아 원단 · 고프코어 무드<br/>밑단 스트링 핏 조절</p>
+<p class="pr">“가볍고 따뜻한, 하지만 힙한 스타일링”</p>
+</div>
+<div>
+<div class="pi"><img alt="★카리나_3FWJB1064-14BRP_01_MS" decoding="async" loading="lazy" src="assets/item-windbreaker.webp"/></div>
+<div class="pn">02</div>
+<h4>여성 고프코어 사선 지퍼 3L 바람막이</h4>
+<p class="pk">발수·방수 기능성 · 지퍼 포인트<br/>밑단 스트링 핏 조절</p>
+<p class="pr">“기능성과 힙한 스타일을 모두 원한다면”</p>
+</div>
+<div>
+<div class="pi"><img alt="3ACPB666N-50SAM_01_MS" decoding="async" loading="lazy" src="assets/item-cap.webp"/></div>
+<div class="pn">03</div>
+<h4>Q핏 언스트럭처 볼캡</h4>
+<p class="pk">스퀘어 핏 · 평평한 챙<br/>트렌디한 아웃핏</p>
+<p class="pr">“MLB의 ICON, 누구나 힙하게”</p>
+</div>
+</div>
+</section>
+<!-- ══════ 04 · LIFESTYLE ══════ -->
+<section class="rv">
+<div class="lb">Lifestyle</div>
+<h2>MLB만의 <b>힙스트릿</b><br/>라이프스타일</h2>
+<div class="g4big">
+<img alt="라이프스타일 (1)" decoding="async" loading="lazy" src="assets/lifestyle-01.webp"/>
+<img alt="라이프스타일 (2)" decoding="async" loading="lazy" src="assets/lifestyle-02.webp"/>
+<img alt="라이프스타일 (3)" decoding="async" loading="lazy" src="assets/lifestyle-03.webp"/>
+<img alt="라이프스타일 (4)" decoding="async" loading="lazy" src="assets/lifestyle-04.webp"/>
+<img alt="라이프스타일 (5)" decoding="async" loading="lazy" src="assets/lifestyle-05.webp"/>
+<img alt="라이프스타일 (6)" decoding="async" loading="lazy" src="assets/lifestyle-06.webp"/>
+<img alt="라이프스타일 (7)" decoding="async" loading="lazy" src="assets/lifestyle-07.webp"/>
+<img alt="라이프스타일 (8)" decoding="async" loading="lazy" src="assets/lifestyle-08.webp"/>
+</div>
+</section>
+</div><!-- /wrap -->
+<!-- ══════ 05 · CLOSING ══════ -->
+<div id="closing"><div class="in">
+  <div class="copy">
+    <h2><span class="ko">MLB로 완성하는</span> <span lang="en">HIP · SPORTIVE LIFESTYLE</span></h2>
+    <p class="subcap ko">앰버서더 캠페인 너머의 일상까지 이어지는 스타일 제안으로, MLB만의 헤리티지와 스트릿 무드를 제안합니다.</p>
+  </div>
+  <div class="sig" lang="en">MLB · 26 F/W FALL COMMUNICATION</div>
+</div></div>
+<div class="wrap"><footer>
+<b>MLB 26FW FALL 사내 PR 대시보드</b> · 본 문서는 사내 공유용으로, 외부 배포를 금합니다.
+</footer></div>
+<script>
+(function(){
+  // 스크롤 진행바
+  var prog=document.getElementById('prog');
+  function onScroll(){
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    prog.style.width=(h>0?(window.scrollY/h*100):0)+'%';
+  }
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // 등장 애니메이션
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})
+  },{rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+
+  // 마퀴: 트랙을 복제해 무한 스크롤로 이어 붙인다
+  document.querySelectorAll('.mtrack').forEach(function(tr){
+    tr.innerHTML=tr.innerHTML+tr.innerHTML;
+  });
+})();
+</script>
+</body>
+</html>
