@@ -120,15 +120,18 @@ figcaption{margin-top:9px;font-size:11.5px;color:var(--sub);line-height:1.5;font
 .grp .gd{margin-top:11px;font-size:14.6px;color:var(--body);letter-spacing:-.025em;line-height:1.68;max-width:880px}
 .hlcopy{margin-top:clamp(18px,2.1vw,24px);padding:14px 18px;background:var(--pink);
   font-size:clamp(15px,1.9vw,17.6px);font-weight:700;letter-spacing:-.038em;line-height:1.5;color:#3A2B28}
-.itemrow{margin-top:clamp(22px,2.6vw,30px);display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:clamp(14px,2vw,22px);align-items:start}
-.itemrow img{width:100%;display:block;background:var(--band)}
-.usp{border-top:1px solid var(--main)}
+.itemrow{margin-top:clamp(22px,2.6vw,30px);display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:clamp(14px,2vw,22px);align-items:stretch}
+.itemrow .item-media{width:100%;display:block;aspect-ratio:3/4;background:#EFEBE7}
+.itemrow .item-media.look{object-fit:cover;object-position:50% 50%}
+.itemrow .item-media.product{object-fit:contain;padding:5%}
+.usp{border-top:1px solid var(--main);display:flex;flex-direction:column}
 .usp .un{padding-top:12px;font-size:9.6px;font-weight:800;letter-spacing:.22em;color:var(--main)}
-.usp ul{margin-top:11px;list-style:none}
-.usp li{position:relative;padding:9px 0 9px 22px;border-bottom:1px solid var(--line);
-  font-size:13.6px;font-weight:600;letter-spacing:-.03em;line-height:1.5;color:var(--ink)}
-.usp li:before{content:'';position:absolute;left:3px;top:16px;width:7px;height:7px;border-radius:50%;background:var(--pink)}
-.usp li:last-child{border-bottom:0}
+.featgrid{margin-top:12px;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line2);border-left:1px solid var(--line2)}
+.featgrid .cell{min-height:132px;padding:16px 18px 18px;border-right:1px solid var(--line2);border-bottom:1px solid var(--line2);background:rgba(255,255,255,.28)}
+.featgrid .idx{display:block;font-size:11px;font-weight:800;letter-spacing:.2em;color:var(--faint);text-transform:uppercase}
+.featgrid .tt{display:block;margin-top:10px;font-size:14px;font-weight:800;letter-spacing:-.035em;line-height:1.45;color:var(--ink)}
+.featgrid .desc{display:block;margin-top:6px;font-size:11.6px;line-height:1.55;color:var(--sub);font-weight:700;letter-spacing:.02em;text-transform:uppercase}
+.featgrid .desc.ko{font-size:12.4px;line-height:1.6;font-weight:600;text-transform:none;letter-spacing:-.02em}
 
 /* ── 제품 상세 ── */
 .p3lead{margin-top:clamp(34px,4vw,52px);padding-top:clamp(20px,2.4vw,26px);border-top:1px solid var(--line2);text-align:center}
@@ -187,6 +190,7 @@ footer b{color:var(--body);font-weight:600}
   h2{font-size:clamp(21px,6.4vw,27px)}
   .stbig{font-size:21px}
   .itemrow{grid-template-columns:1fr;gap:12px}
+  .featgrid .cell{min-height:118px;padding:14px 14px 16px}
   .p3{grid-template-columns:1fr;gap:24px}
   .p3 .pi{width:74%;margin:0 auto}
   .g4big{grid-template-columns:1fr 1fr;gap:8px}
@@ -237,15 +241,15 @@ img{max-width:100%;height:auto}
 <div class="stmt">
 <div class="stkick">AMBASSADOR 01 · KARINA</div>
 <p class="stbig">KARINA, <b>THE NEW <span class="pk">CURVE</span></b></p>
-<p class="stsub">26FW, 야구공이 그려내는 곡선을 현대적인 실루엣으로 재해석한 <b>MLB NEW 커브패딩</b>을 선보입니다.</p>
+<p class="stsub">야구공이 그려내는 곡선을 트렌디한 실루엣으로 재해석한 <b>MLB NEW 커브패딩</b>. 저데니아 소재가 선사하는 가벼운 착용감까지, 완벽한 스타일링을 선보입니다.</p>
 </div>
 <div class="filmbox">
 <video aria-label="카리나_FALL_영상_최종_가로" autoplay="" controls="" loop="" muted="" playsinline="" poster="assets/karina-film-poster.webp" preload="metadata" src="assets/karina-fall-film.mp4"></video>
 </div>
 <div class="filmcopy">
 <p class="fh">헤리티지와 트렌디한 실루엣이 만난 <em>THE NEW CURVE</em></p>
-<p>26FW 카리나 FALL 캠페인은 트렌디한 시장 니즈에 헤리티지를 더해 새롭게 태어난 커브 패딩을 담아냈습니다.
-    야구공이 그려내는 곡선을 카리나만의 매력적인 실루엣으로 구현했으며, 경쾌하고 힙한 카리나의 무브먼트로
+<p>26FW 카리나 FALL 캠페인은 트렌디한 마켓 니즈에 헤리티지를 더해 새롭게 태어난 커브 패딩을 담아냈습니다.
+    야구공의 곡선을 카리나만의 매력적인 실루엣으로 구현했으며, 경쾌하고 힙한 카리나의 무브먼트로 커브패딩만의
     <b>가벼운 경량감</b>을 보여줍니다. 헤리티지와 현대적인 실루엣으로 더욱 새로워진 MLB NEW 커브패딩을 만나보세요.</p>
 </div>
 <div class="marquee">
@@ -262,7 +266,7 @@ img{max-width:100%;height:auto}
 <div class="stmt">
 <div class="stkick">AMBASSADOR 02 · RESCENE</div>
 <p class="stbig">SLEEK, <b>THE <span class="pk">RESCENE</span> WAY</b></p>
-<p class="stsub">리센느만의 매력으로 선보이는 <b>MLB 슬릭</b> 가을 스타일링</p>
+<p class="stsub">리센느만의 매력으로 선보이는 <b>MLB 슬릭</b> 가을 스타일링.</p>
 </div>
 <div class="filmbox">
 <video aria-label="RESCENE MAIN FILM (가로)" autoplay="" controls="" loop="" muted="" playsinline="" poster="assets/rescene-film-poster.webp" preload="metadata" src="assets/rescene-main-film.mp4"></video>
@@ -295,16 +299,16 @@ img{max-width:100%;height:auto}
 <p class="gt">야구공의 곡선을 입은 경량패딩</p>
 <p class="hlcopy">가볍지만 실루엣은 새롭게, THE NEW CURVE 경량패딩</p>
 <div class="itemrow">
-<img alt="카리나 화보 (7)" decoding="async" loading="lazy" src="assets/curve-look.webp"/>
-<img alt="★카리나_3FPDB0166-07CRP_01_MS" decoding="async" loading="lazy" src="assets/curve-product.webp"/>
+<img alt="카리나 화보 (7)" class="item-media look" decoding="async" loading="lazy" src="assets/curve-look.webp"/>
+<img alt="★카리나_3FPDB0166-07CRP_01_MS" class="item-media product" decoding="async" loading="lazy" src="assets/curve-product.webp"/>
 <div class="usp">
 <div class="un">STRENGTH</div>
-<ul>
-<li>입체적인 패턴으로 매력적인 실루엣</li>
-<li>10D 초경량 원단 소재로 가벼운 착용감</li>
-<li>뛰어난 보온성과 활동성</li>
-<li>다양한 컬러웨이로 시즌 포인트 아우터 활용</li>
-</ul>
+<div class="featgrid">
+  <div class="cell"><span class="idx">i</span><span class="tt ko">입체적인 패턴으로<br/>매력적인 실루엣</span></div>
+  <div class="cell"><span class="idx">ii</span><span class="tt ko">10D 초경량 원단 소재로<br/>가벼운 착용감</span></div>
+  <div class="cell"><span class="idx">iii</span><span class="tt ko">뛰어난 보온성과<br/>활동성</span></div>
+  <div class="cell"><span class="idx">iv</span><span class="tt ko">다양한 컬러웨이로<br/>시즌 포인트 아우터 활용</span></div>
+</div>
 </div>
 </div>
 </div>
@@ -314,16 +318,16 @@ img{max-width:100%;height:auto}
 <p class="gt">야구화에서 온 로우 프로파일 스니커즈</p>
 <p class="hlcopy">야구 헤리티지를 담은 슬림, 트렌디한 로우 프로파일 슈즈, THE NEW SLEEK</p>
 <div class="itemrow">
-<img alt="리센느 화보_리브" decoding="async" loading="lazy" src="assets/sleek-look.webp"/>
-<img alt="3ACVS026N-13PKL_08_MS" decoding="async" loading="lazy" src="assets/sleek-product.webp"/>
+<img alt="리센느 화보_리브" class="item-media look" decoding="async" loading="lazy" src="assets/sleek-look.webp"/>
+<img alt="3ACVS026N-13PKL_08_MS" class="item-media product" decoding="async" loading="lazy" src="assets/sleek-product.webp"/>
 <div class="usp">
 <div class="un">RESULT</div>
-<ul>
-<li>슬림한 로우 프로파일 쉐입의 트렌디한 디자인</li>
-<li>야구화에서 영감을 받은 베이스볼 스티치 디테일</li>
-<li>가벼운 중량감이 선사하는 활동성</li>
-<li>유연한 아웃솔 구조의 편안한 착화감</li>
-</ul>
+<div class="featgrid">
+  <div class="cell"><span class="idx">i</span><span class="tt ko">슬림한 로우 프로파일 쉐입의<br/>트렌디한 디자인</span></div>
+  <div class="cell"><span class="idx">ii</span><span class="tt ko">야구화에서 영감을 받은<br/>베이스볼 스티치 디테일</span></div>
+  <div class="cell"><span class="idx">iii</span><span class="tt ko">가벼운 중량감이 선사하는<br/>활동성</span></div>
+  <div class="cell"><span class="idx">iv</span><span class="tt ko">유연한 아웃솔 구조의<br/>편안한 착화감</span></div>
+</div>
 </div>
 </div>
 </div>
@@ -361,14 +365,14 @@ img{max-width:100%;height:auto}
 <div class="lb">Lifestyle</div>
 <h2>MLB만의 <b>힙스트릿</b><br/>라이프스타일</h2>
 <div class="g4big">
+<img alt="라이프스타일 신규 (5)" decoding="async" loading="lazy" src="assets/lifestyle-custom-5.webp"/>
 <img alt="라이프스타일 (1)" decoding="async" loading="lazy" src="assets/lifestyle-01.webp"/>
 <img alt="라이프스타일 (2)" decoding="async" loading="lazy" src="assets/lifestyle-02.webp"/>
-<img alt="라이프스타일 (3)" decoding="async" loading="lazy" src="assets/lifestyle-03.webp"/>
-<img alt="라이프스타일 (4)" decoding="async" loading="lazy" src="assets/lifestyle-04.webp"/>
-<img alt="라이프스타일 (5)" decoding="async" loading="lazy" src="assets/lifestyle-05.webp"/>
-<img alt="라이프스타일 (6)" decoding="async" loading="lazy" src="assets/lifestyle-06.webp"/>
 <img alt="라이프스타일 (7)" decoding="async" loading="lazy" src="assets/lifestyle-07.webp"/>
-<img alt="라이프스타일 (8)" decoding="async" loading="lazy" src="assets/lifestyle-08.webp"/>
+<img alt="라이프스타일 신규 (1)" decoding="async" loading="lazy" src="assets/lifestyle-custom-1.webp"/>
+<img alt="라이프스타일 신규 (2)" decoding="async" loading="lazy" src="assets/lifestyle-custom-2.webp"/>
+<img alt="라이프스타일 신규 (3)" decoding="async" loading="lazy" src="assets/lifestyle-custom-3.webp"/>
+<img alt="라이프스타일 신규 (4)" decoding="async" loading="lazy" src="assets/lifestyle-custom-4.webp"/>
 </div>
 </section>
 </div><!-- /wrap -->
