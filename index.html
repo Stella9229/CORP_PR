@@ -7,6 +7,7 @@
 <title>MLB FALL STYLE with KARINA &amp; RESCENE — MLB 26FW FALL</title>
 <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -18,8 +19,8 @@
 
   --paper:#FCFAF8; --ink:#241D1B; --body:#575049; --sub:#9A8F89; --faint:#C9C0BA;
   --line:#EDE7E2; --line2:#DED4CE; --band:#F5F0EB;
-  --ff:'SUIT Variable','SUIT','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-  --ff-ko:'Pretendard Variable','Pretendard','Apple SD Gothic Neo',-apple-system,system-ui,sans-serif;
+  --ff:'SUIT Variable','SUIT','Noto Sans KR','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --ff-ko:'Pretendard Variable','Pretendard','Noto Sans KR','Apple SD Gothic Neo',-apple-system,system-ui,sans-serif;
 }
 html,body{overflow-x:hidden;max-width:100%}
 html{scroll-behavior:smooth}
@@ -91,10 +92,11 @@ figcaption{margin-top:9px;font-size:11.5px;color:var(--sub);line-height:1.5;font
 .stbig .pk{color:var(--pink-deep);font-weight:700}
 .stsub{margin-top:13px;font-size:14.8px;color:var(--body);line-height:1.74;max-width:840px}
 .stsub b{font-weight:700;color:var(--ink)}
+.nb{white-space:nowrap}
 
 /* 영상 */
 .filmbox{margin-top:clamp(22px,2.6vw,32px)}
-.filmbox video{display:block;width:100%;background:var(--band);border:1px solid var(--line2)}
+.filmbox video,.filmbox img{display:block;width:100%;background:var(--band);border:1px solid var(--line2)}
 .filmcopy{margin-top:clamp(20px,2.4vw,28px);padding:clamp(20px,2.4vw,28px);background:var(--band);border-left:3px solid var(--main)}
 .filmcopy .fh{font-size:clamp(17px,2.2vw,21px);font-weight:700;letter-spacing:-.042em;line-height:1.4;color:var(--ink)}
 .filmcopy .fh em{font-style:normal;color:var(--main)}
@@ -210,6 +212,7 @@ footer b{color:var(--body);font-weight:600}
 
 /* ── 최종 에셋 최적화 ── */
 .filmbox video{aspect-ratio:16/9;object-fit:cover}
+.filmbox img{height:auto}
 img{max-width:100%;height:auto}
 </style>
 </head>
@@ -231,7 +234,7 @@ img{max-width:100%;height:auto}
 <span><b>KEY ITEM</b> 경량패딩 · 슬릭</span>
 </div>
 <figure class="herotop">
-<img alt="명동PSD T18_하단" decoding="async" fetchpriority="high" loading="eager" src="assets/hero-main.jpg"/>
+<img alt="명동PSD T18_하단" fetchpriority="high" loading="eager" src="assets/hero_A_colormanaged_sRGB.jpg" width="2400" height="1543"/>
 </figure>
 <p class="hero-note ko"><span>MLB의 베이스볼 헤리티지를 기반으로 더욱 트렌디해진 26FW <b>NEW 경량패딩과 슬릭</b>.</span><span>K-POP 셀럽 카리나와 리센느가 HIP하고 유니크한 라이프스타일을 제안합니다.</span></p>
 </header>
@@ -241,7 +244,7 @@ img{max-width:100%;height:auto}
 <div class="stmt">
 <div class="stkick">AMBASSADOR 01 · KARINA</div>
 <p class="stbig">KARINA, <b>THE NEW <span class="pk">CURVE</span></b></p>
-<p class="stsub">야구공이 그려내는 곡선을 트렌디한 실루엣으로 재해석한 <b>MLB NEW 커브패딩</b>. 저데니아 소재가 선사하는 가벼운 착용감까지, 완벽한 스타일링을 선보입니다.</p>
+<p class="stsub">야구공이 그려내는 곡선을 트렌디한 실루엣으로 재해석한 <b>MLB NEW 커브패딩</b>. 저데니아 소재가 선사하는 가벼운 착용감까지, <span class="nb">완벽한 스타일링을 선보입니다.</span></p>
 </div>
 <div class="filmbox">
 <video aria-label="카리나_FALL_영상_최종_가로" autoplay="" controls="" loop="" muted="" playsinline="" poster="assets/karina-film-poster.webp" preload="metadata" src="assets/karina-fall-film.mp4"></video>
@@ -269,7 +272,7 @@ img{max-width:100%;height:auto}
 <p class="stsub">리센느만의 매력으로 선보이는 <b>MLB 슬릭</b> 가을 스타일링.</p>
 </div>
 <div class="filmbox">
-<video aria-label="RESCENE MAIN FILM (가로)" autoplay="" controls="" loop="" muted="" playsinline="" poster="assets/rescene-film-poster.webp" preload="metadata" src="assets/rescene-main-film.mp4"></video>
+<img alt="리센느 화보_단체 (가로)" decoding="async" height="1280" src="assets/rescene-main-visual.webp" width="1920"/>
 </div>
 <div class="filmcopy">
 <p class="fh">리센느가 제안하는 <em>슬릭 × 힙스포티브</em> 무드</p>
@@ -318,7 +321,7 @@ img{max-width:100%;height:auto}
 <p class="gt">야구화에서 온 로우 프로파일 스니커즈</p>
 <p class="hlcopy">야구 헤리티지를 담은 슬림, 트렌디한 로우 프로파일 슈즈, THE NEW SLEEK</p>
 <div class="itemrow">
-<img alt="리센느 화보_리브" class="item-media look" decoding="async" loading="lazy" src="assets/sleek-look.webp"/>
+<img alt="리센느 화보_슬릭 착용컷" class="item-media look" decoding="async" loading="lazy" src="assets/sleek-look.webp"/>
 <img alt="3ACVS026N-13PKL_08_MS" class="item-media product" decoding="async" loading="lazy" src="assets/sleek-product.webp"/>
 <div class="usp">
 <div class="un">RESULT</div>
@@ -365,14 +368,14 @@ img{max-width:100%;height:auto}
 <div class="lb">Lifestyle</div>
 <h2>MLB만의 <b>힙스트릿</b><br/>라이프스타일</h2>
 <div class="g4big">
-<img alt="라이프스타일 신규 (5)" decoding="async" loading="lazy" src="assets/lifestyle-custom-5.webp"/>
-<img alt="라이프스타일 (1)" decoding="async" loading="lazy" src="assets/lifestyle-01.webp"/>
-<img alt="라이프스타일 (2)" decoding="async" loading="lazy" src="assets/lifestyle-02.webp"/>
-<img alt="라이프스타일 (7)" decoding="async" loading="lazy" src="assets/lifestyle-07.webp"/>
-<img alt="라이프스타일 신규 (1)" decoding="async" loading="lazy" src="assets/lifestyle-custom-1.webp"/>
-<img alt="라이프스타일 신규 (2)" decoding="async" loading="lazy" src="assets/lifestyle-custom-2.webp"/>
-<img alt="라이프스타일 신규 (3)" decoding="async" loading="lazy" src="assets/lifestyle-custom-3.webp"/>
-<img alt="라이프스타일 신규 (4)" decoding="async" loading="lazy" src="assets/lifestyle-custom-4.webp"/>
+<img alt="라이프스타일 신규 (5)" decoding="async" loading="lazy" src="assets/influencer-01.webp"/>
+<img alt="라이프스타일 (1)" decoding="async" loading="lazy" src="assets/influencer-02.webp"/>
+<img alt="라이프스타일 (2)" decoding="async" loading="lazy" src="assets/influencer-03.webp"/>
+<img alt="라이프스타일 (7)" decoding="async" loading="lazy" src="assets/influencer-04.webp"/>
+<img alt="라이프스타일 신규 (1)" decoding="async" loading="lazy" src="assets/influencer-05.webp"/>
+<img alt="라이프스타일 신규 (2)" decoding="async" loading="lazy" src="assets/influencer-06.webp"/>
+<img alt="라이프스타일 신규 (3)" decoding="async" loading="lazy" src="assets/influencer-07.webp"/>
+<img alt="라이프스타일 신규 (4)" decoding="async" loading="lazy" src="assets/influencer-08.webp"/>
 </div>
 </section>
 </div><!-- /wrap -->
